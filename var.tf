@@ -1,4 +1,6 @@
 variable "region" {}
+variable "access_key" {}
+variable "secret_key" {}
 variable "env_prefix" {}
 variable "vpc_cidr_block" {}
 variable "pri_1_subnet" {}
@@ -7,3 +9,4 @@ variable "pub_1_subnet" {}
 variable "pub_2_subnet" {}
 variable "avail_zone_1" {}
 variable "avail_zone_2" {}
+variable "instance_type" {}
