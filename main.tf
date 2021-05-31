@@ -1,6 +1,6 @@
 provider "aws" {
-  region            = var.region
-  access_key    = "AKIATADWNDBTDCMAAGMP"
+  region     = var.region
+  access_key = "AKIATADWNDBTDCMAAGMP"
   secret_key = "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"
 }
 //  tags = {
@@ -13,8 +13,8 @@ module "vpc" {
   name = "my-vpc"
   cidr = var.vpc_cidr_block
 
-  azs             = [var.avail_zone_1,var.avail_zone_2]
-  private_subnets = [var.pri_1_subnet,var.pri_2_subnet]
+  azs             = [var.avail_zone_1, var.avail_zone_2]
+  private_subnets = [var.pri_1_subnet, var.pri_2_subnet]
   public_subnets  = [var.pub_1_subnet, var.pub_2_subnet]
 
 
@@ -23,6 +23,6 @@ module "vpc" {
 
   tags = {
     Terraform   = "true"
-    Environment = "${var.env_prefix}"
+    Environment = var.env_prefix
   }
 }
