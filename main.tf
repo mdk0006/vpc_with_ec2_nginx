@@ -1,7 +1,10 @@
+#All other variables are optional to change 
 provider "aws" {
   region     = var.region
   access_key = var.access_key
+  #Change When Using
   secret_key = var.secret_key
+  #Change When Using
 }
 
 module "vpc" {
