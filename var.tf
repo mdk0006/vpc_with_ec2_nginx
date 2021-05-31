@@ -1,0 +1,9 @@
+variable "region" {}
+variable "env_prefix" {}
+variable "vpc_cidr_block" {}
+variable "pri_1_subnet" {}
+variable "pri_2_subnet" {}
+variable "pub_1_subnet" {}
+variable "pub_2_subnet" {}
+variable "avail_zone_1" {}
+variable "avail_zone_2" {}
